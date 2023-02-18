@@ -1,5 +1,5 @@
 """
-WSGI config for drinks project.
+WSGI config for words project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'drinks.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'words.settings')
 
 application = get_wsgi_application()

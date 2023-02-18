@@ -1,4 +1,4 @@
-"""drinks URL Configuration
+"""words URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.0/topics/http/urls/
@@ -15,13 +15,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from drinks import views
+from words import views
 from rest_framework.urlpatterns import format_suffix_patterns
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('drinks/', views.drink_list),
-    path('drinks/<int:id>', views.drink_detail)
+    path('words/', views.word_list),
+    path('words/<int:id>', views.word_detail)
 ]
 
 urlpatterns = format_suffix_patterns(urlpatterns)
